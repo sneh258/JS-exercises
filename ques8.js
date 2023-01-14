@@ -22,9 +22,9 @@ return vowelCount;
 
 console.log(vowelCount("hi this is sneha"))
 
+// Arrow Function
 
-
-const vowe_lCount=(inputOne)=>
+const vowel_Count=(inputOne)=>
 {
 
     let vowelCount=0
@@ -43,4 +43,4 @@ return vowelCount;
     
 }
 
-console.log(vowel_Count("hi this is sneha"))
+console.log(vowel_Count("hi this is me"))
