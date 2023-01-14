@@ -4,11 +4,11 @@
 
 // Regular function....
 
-const numbers=[1, 2, 3, 4, 5]
-const num=[1,5,7,9]
+const inputOne=[1, 2, 3, 4, 5]
+const inputTwo=[1,5,7,9]
 
 function isLargestEven(numbers)
-{ // inputOne
+{ 
     // function name based on objective
     let max = -1
 
@@ -46,6 +46,6 @@ const is_largest_even=(num)=>{
 
 }
 
-console.log('for regular function the result is : ',isLargestEven(numbers));
+console.log('for regular function the result is : ',isLargestEven(inputOne));
 
-console.log('for arrow function the result is : ',is_largest_even(num));
+console.log('for arrow function the result is : ',is_largest_even(inputTwo));
