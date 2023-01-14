@@ -1,7 +1,7 @@
 // Write a JavaScript function ( both regular and arrow function) which takes year as parameter 
 // to determine and print whether a given year is a leap year or not. Try using ternary operator
 
-function checkleapYear(year)
+function checkLeapYear(year)
 {
     let theYear="abc"
     
@@ -14,7 +14,7 @@ function checkleapYear(year)
 }
 
 
-console.log(checkleapYear(2000));
+console.log(checkLeapYear(2000));
 
 const check_leap_Year=(year)=>
 {
