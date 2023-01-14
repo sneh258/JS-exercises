@@ -9,6 +9,9 @@ function concatenateStrings(text1,text2)
 
 console.log(concatenateStrings("Sneha","Lall"))
 
+
+// Arrow Function
+
 const concatenate_Strings=(text1,text2)=>
 {
     let output=text1.concat(text2)
