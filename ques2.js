@@ -48,5 +48,7 @@ const isSameDigit=(number)=>{
     return "True"
 }
 
-console.log("Regular function result for number 222 : ",is_same_digits(222));
-console.log("Arrow function result for number 232: ",isSameDigit(232));
+module.exports={isSameDigit,is_same_digits};
+
+// console.log("Regular function result for number 222 : ",is_same_digits(222));
+// console.log("Arrow function result for number 232: ",isSameDigit(232));
