@@ -3,30 +3,16 @@
 
 function checkLeapYear(year)
 {
-    let theYear="abc"
-    
-    if((year%4==0)&&(year%100!=0))
-    {
-        theYear="leap"
-    }
 
-    return theYear=="leap" ? "yes" : "no";
+    return year%4==0 && year%100!=0 ? "yes" : "no";
 }
 
 
 console.log(checkLeapYear(2000));
 
-const check_leap_Year=(year)=>
-{
-    let theYear="abc"
-    
-    if((year%4==0)&&(year%100!=0))
-    {
-        theYear="leap"
-    }
+const check_leap_Year=(year)=>year%4==0 && year%100!=0 ? "yes" : "no";
 
-    return theYear=="leap" ? "yes" : "no";
-
-}
 
 console.log(check_leap_Year(2004));
+
+module.exports={check_leap_Year,checkLeapYear};
