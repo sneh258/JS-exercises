@@ -20,7 +20,7 @@ return vowelCount;
     
 }
 
-console.log(vowelCount("hi this is sneha"))
+console.log(vowelCount("this"))
 
 // Arrow Function
 
@@ -44,3 +44,6 @@ return vowelCount;
 }
 
 console.log(vowel_Count("hi this is me"))
+
+
+module.exports={vowelCount,vowel_Count};
