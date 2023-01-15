@@ -1,20 +1,42 @@
 // Write a JavaScript program to replace every character in a given string
 // with the character following it in the alphabet.
 
-function replaceCharacter(inputOne)
+function replaceChar_withNext(inputOne)
 {
 
-    for(let i=0;i<inputOne.length;i++)
-    {
-        let char = inputOne.charCodeAt(inputOne[i]);
-        console.log(char)
-        let char1=String.fromCharCode(char+1)
-        console.log(char1)
-        //inputOne.replace(inputOne[index],char)
-        
-    }
-
-    return inputOne;
+    
+        let newStr = "";
+        for(let i = 0; i < inputOne.length ; ++i) {
+            if(inputOne[i] === 'z')
+                newStr += 'a';
+            else if(inputOne[i] === 'Z')
+                newStr += 'A';
+            else 
+                newStr += String.fromCharCode(inputOne.charCodeAt(i) + 1);
+        }
+        return newStr;
+    
 }
 
-console.log(replaceCharacter("sneha"))
+console.log(replaceChar_withNext("my college"));
+
+const replaceCharWithNext=(inputOne)=>
+{
+
+    
+        let newStr = "";
+        for(let i = 0; i < inputOne.length ; ++i) {
+            if(inputOne[i] === 'z')
+                newStr += 'a';
+            else if(inputOne[i] === 'Z')
+                newStr += 'A';
+            else 
+                newStr += String.fromCharCode(inputOne.charCodeAt(i) + 1);
+        }
+        return newStr;
+    
+}
+
+console.log(replaceCharWithNext("preserved"))
+
+module.exports={replaceCharWithNext,replaceChar_withNext};
