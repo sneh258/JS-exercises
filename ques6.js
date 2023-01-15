@@ -9,14 +9,15 @@ function endsWith(inputOne)
 
 }
 
-console.log(endsWith("I am Learning JavaScript"))
+console.log(endsWith("I am Learning JavaScript"));
 
-const ends_With=(inputOne)=>{
+const ends_With=(inputOne)=>inputOne.endsWith("Script") ? "True" : "False"
 
-    return inputOne.endsWith("Script") ? "True" : "False"
 
-}
 
-console.log(ends_With("I am Learning Java"))
+console.log(ends_With("I am Learning Java"));
+
+module.exports={endsWith,ends_With};
+
 
 
