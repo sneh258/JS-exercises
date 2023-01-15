@@ -4,13 +4,15 @@
 
 // Regular function....
 
-const inputOne=[1, 2, 3, 4, 5]
+const inputOne=[-1, -2, -3, -4, -5]
 const inputTwo=[1,5,7,9]
 
 function isLargestEven(numbers)
 { 
     // function name based on objective
-    let max = -1
+
+    
+    let max = Number.MIN_SAFE_INTEGER;
 
     for(let i=0;i<numbers.length;i++)
     {
@@ -21,31 +23,28 @@ function isLargestEven(numbers)
         }
     }
     
-    return max;
+    return max==Number.MIN_SAFE_INTEGER?-1:max
     
 }
 
 
 // arrow function
 
-const is_largest_even=(num)=>{
+const is_largest_even=(numbers)=>{
+    let max = Number.MIN_SAFE_INTEGER;
 
-    let max = -1
-
-    for(let i=0;i<num.length;i++)
+    for(let i=0;i<numbers.length;i++)
     {
-        if(num[i]>max && num[i]%2==0)
+        if(numbers[i]>max && numbers[i]%2==0)
         {
-            max=num[i]
+            max=numbers[i]
 
         }
     }
-
-    return max;
     
-
+    return max==Number.MIN_SAFE_INTEGER?-1:max
 }
+module.exports = {isLargestEven, is_largest_even};
 
-console.log('for regular function the result is : ',isLargestEven(inputOne));
-
-console.log('for arrow function the result is : ',is_largest_even(inputTwo));
+console.log(is_largest_even(inputTwo))
+console.log(isLargestEven(inputOne))
