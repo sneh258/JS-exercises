@@ -4,13 +4,13 @@
 function checkLeapYear(year)
 {
 
-    return year%4==0 && year%100!=0 ? "yes" : "no";
+  return year%4==0 && year%100!=0 ? 'yes' : 'no';
 }
 
 
 console.log(checkLeapYear(2000));
 
-const check_leap_Year=(year)=>year%4==0 && year%100!=0 ? "yes" : "no";
+const check_leap_Year=(year)=>year%4==0 && year%100!=0 ? 'yes' : 'no';
 
 
 console.log(check_leap_Year(2004));

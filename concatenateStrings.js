@@ -3,10 +3,10 @@
 
 function concatenateStrings(text1,text2)
 {
-    return text1.slice(1).concat(text2.slice(1));
+  return text1.slice(1).concat(text2.slice(1));
 }
 
-console.log(concatenateStrings("Sneha","Lall"))
+console.log(concatenateStrings('Sneha','Lall'));
 
 
 // Arrow Function
@@ -14,6 +14,6 @@ console.log(concatenateStrings("Sneha","Lall"))
 const concatenate_Strings=(text1,text2)=>text1.slice(1).concat(text2.slice(1));
 
 
-console.log(concatenate_Strings("hi","there"))
+console.log(concatenate_Strings('hi','there'));
 
 module.exports={concatenateStrings,concatenate_Strings};
